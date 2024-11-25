@@ -4,20 +4,16 @@ import java.util.Scanner;
 
 public class ReverseWordApp {
     public static void main(String[] args) {
-        // Create a Scanner object to read input
+        // Create a scanner object
         Scanner scanner = new Scanner(System.in);
-
-        // Prompt the user to enter a word
-        System.out.print("Enter a word to reverse: ");
-        String inputWord = scanner.nextLine();
-
-        //Reverse the word using StringBuilder
-        String reversedWord = new StringBuilder(inputWord).reverse().toString();
-
+        // Prompt user to enter a word
+        System.out.println("Please enter a word: ");
+        // Save  user's word in a variable
+        String userWord = scanner.nextLine();
+        // Reverse the word with a StringBuilder
+        String reversedWord = new StringBuilder(userWord).reverse().toString();
         // Print the reversed word
-        System.out.println("The reversed word is: " + reversedWord);
+        System.out.println("Your word reversed is " + reversedWord);
 
-        // Close the scanner
-        scanner.close();
     }
 }
